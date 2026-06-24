@@ -1,0 +1,472 @@
+2026-06-17 21:26:20.563 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 21:26:20.564 | INFO     | __main__:main:233 | ==================================================
+2026-06-17 21:26:20.564 | INFO     | __main__:main:234 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 21:26:20.564 | INFO     | __main__:main:235 | ==================================================
+2026-06-17 21:26:20.604 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 21:26:20.781 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 21:26:20.781 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 21:26:20.808 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 21:26:20.808 | INFO     | __main__:run_check:75 | ==================================================
+2026-06-17 21:26:20.808 | INFO     | __main__:run_check:76 | 环境诊断
+2026-06-17 21:26:20.809 | INFO     | __main__:run_check:77 | ==================================================
+2026-06-17 21:26:20.809 | INFO     | __main__:run_check:82 | ADB 已连接: True
+2026-06-17 21:26:20.809 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 21:26:20.830 | INFO     | __main__:run_check:87 | 屏幕分辨率: 720x1280
+2026-06-17 21:26:20.830 | WARNING  | __main__:run_check:89 | 分辨率非标准，图像模板可能需要调整
+2026-06-17 21:26:20.830 | WARNING  | __main__:run_check:99 | 图像模板目录为空或不存在: assets\screens
+2026-06-17 21:26:20.830 | WARNING  | __main__:run_check:100 | 请先使用截屏工具收集游戏模板
+2026-06-17 21:26:20.831 | WARNING  | __main__:run_check:99 | 图像模板目录为空或不存在: assets\popups
+2026-06-17 21:26:20.831 | WARNING  | __main__:run_check:100 | 请先使用截屏工具收集游戏模板
+2026-06-17 21:26:20.883 | INFO     | __main__:run_check:105 | OpenCV 版本: 4.13.0
+2026-06-17 21:26:20.883 | INFO     | __main__:run_check:113 | NumPy 版本: 2.4.6
+2026-06-17 21:26:20.883 | INFO     | __main__:run_check:118 | ==================================================
+2026-06-17 21:26:20.883 | INFO     | __main__:run_check:120 | 环境诊断完成，基础检查通过
+2026-06-17 21:26:20.898 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 21:26:20.898 | INFO     | __main__:main:291 | 脚本已退出
+2026-06-17 21:27:26.205 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 21:27:26.205 | INFO     | __main__:main:233 | ==================================================
+2026-06-17 21:27:26.206 | INFO     | __main__:main:234 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 21:27:26.206 | INFO     | __main__:main:235 | ==================================================
+2026-06-17 21:27:26.242 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 21:27:26.421 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 21:27:26.422 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 21:27:26.449 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 21:27:26.511 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 21:27:26.531 | INFO     | __main__:run_tasks:136 | 设备分辨率: (720, 1280)
+2026-06-17 21:27:26.531 | INFO     | __main__:run_tasks:137 | 图像模板目录: ./assets
+2026-06-17 21:27:26.531 | INFO     | __main__:run_tasks:149 | 共 2 个任务待执行
+2026-06-17 21:27:26.534 | INFO     | __main__:run_tasks:161 | --- 执行: daily_signin (优先级=1) ---
+2026-06-17 21:27:26.534 | INFO     | scheduler.base_task:run:172 | [daily_signin] 开始执行 (优先级=1)
+2026-06-17 21:27:26.534 | DEBUG    | core.vision:wait_until:239 | 等待元素出现: buttons/btn_signin.png (timeout=5.0s)
+2026-06-17 21:27:26.534 | DEBUG    | core.adb_controller:exec_out:211 | exec-out: screencap
+2026-06-17 21:27:26.696 | DEBUG    | core.device:screenshot:55 | Raw 截图失败，回退到 PNG 模式: 像素数据不足: 期望 3686400 字节, 实际 3686357 字节
+2026-06-17 21:27:26.696 | DEBUG    | core.adb_controller:shell_bytes:183 | shell (bytes): screencap -p
+2026-06-17 21:27:27.023 | ERROR    | scheduler.base_task:on_error:159 | [daily_signin] 异常: PNG 截图解码失败
+2026-06-17 21:27:27.024 | INFO     | __main__:run_tasks:161 | --- 执行: collect_stamina (优先级=2) ---
+2026-06-17 21:27:27.024 | INFO     | scheduler.base_task:run:172 | [collect_stamina] 开始执行 (优先级=2)
+2026-06-17 21:27:27.024 | DEBUG    | core.vision:wait_until:239 | 等待元素出现: buttons/btn_stamina.png (timeout=5.0s)
+2026-06-17 21:27:27.024 | DEBUG    | core.adb_controller:exec_out:211 | exec-out: screencap
+2026-06-17 21:27:27.159 | DEBUG    | core.device:screenshot:55 | Raw 截图失败，回退到 PNG 模式: 像素数据不足: 期望 3686400 字节, 实际 3686360 字节
+2026-06-17 21:27:27.159 | DEBUG    | core.adb_controller:shell_bytes:183 | shell (bytes): screencap -p
+2026-06-17 21:27:27.488 | ERROR    | scheduler.base_task:on_error:159 | [collect_stamina] 异常: PNG 截图解码失败
+2026-06-17 21:27:27.488 | INFO     | __main__:main:254 | 任务完成: 0 成功, 2 失败
+2026-06-17 21:27:27.504 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 21:27:27.504 | INFO     | __main__:main:291 | 脚本已退出
+2026-06-17 21:43:30.850 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 21:43:30.850 | INFO     | __main__:main:203 | ==================================================
+2026-06-17 21:43:30.850 | INFO     | __main__:main:204 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 21:43:30.850 | INFO     | __main__:main:205 | ==================================================
+2026-06-17 21:43:30.889 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 21:43:31.076 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 21:43:31.077 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 21:43:31.104 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 21:43:31.104 | INFO     | __main__:run_check:75 | ==================================================
+2026-06-17 21:43:31.104 | INFO     | __main__:run_check:76 | 环境诊断
+2026-06-17 21:43:31.104 | INFO     | __main__:run_check:77 | ==================================================
+2026-06-17 21:43:31.104 | INFO     | __main__:run_check:82 | ADB 已连接: True
+2026-06-17 21:43:31.104 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 21:43:31.124 | INFO     | __main__:run_check:87 | 屏幕分辨率: 720x1280（模板应为 1280x720 或相近比例）
+2026-06-17 21:43:31.124 | INFO     | __main__:run_check:100 | 模板目录 buttons: 1 个文件
+2026-06-17 21:43:31.124 | WARNING  | __main__:run_check:98 | 图像模板目录为空: assets\screens (请截取游戏界面模板)
+2026-06-17 21:43:31.124 | WARNING  | __main__:run_check:98 | 图像模板目录为空: assets\popups (请截取游戏界面模板)
+2026-06-17 21:43:31.181 | INFO     | __main__:run_check:105 | OpenCV 版本: 4.13.0
+2026-06-17 21:43:31.181 | INFO     | __main__:run_check:113 | NumPy 版本: 2.4.6
+2026-06-17 21:43:35.021 | INFO     | __main__:run_check:121 | EasyOCR 已安装
+2026-06-17 21:43:35.022 | INFO     | __main__:run_check:125 | ==================================================
+2026-06-17 21:43:35.022 | INFO     | __main__:run_check:127 | 环境诊断完成，基础检查通过
+2026-06-17 21:43:35.038 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 21:43:35.038 | INFO     | __main__:main:248 | 脚本已退出
+2026-06-17 21:44:22.053 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 21:44:22.053 | INFO     | __main__:main:203 | ==================================================
+2026-06-17 21:44:22.053 | INFO     | __main__:main:204 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 21:44:22.053 | INFO     | __main__:main:205 | ==================================================
+2026-06-17 21:44:22.091 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 21:44:22.256 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 21:44:22.256 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 21:44:22.284 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 21:44:22.345 | DEBUG    | core.ocr:__init__:42 | OCREngine 已创建 (语言=['ch_sim', 'en'], GPU=True)
+2026-06-17 21:44:22.345 | DEBUG    | scheduler.recovery:_load_popup_templates:82 | 已加载 0 个弹窗模板: []
+2026-06-17 21:44:22.346 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_signin (DailySignInTask)
+2026-06-17 21:44:22.346 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: collect_stamina (CollectStaminaTask)
+2026-06-17 21:44:22.347 | DEBUG    | scheduler.engine:_discover_tasks:115 | 任务模块不存在: tasks.collect_mail
+2026-06-17 21:44:22.347 | DEBUG    | scheduler.engine:_discover_tasks:115 | 任务模块不存在: tasks.daily_quest
+2026-06-17 21:44:22.347 | DEBUG    | scheduler.engine:_discover_tasks:115 | 任务模块不存在: tasks.arena
+2026-06-17 21:44:22.347 | DEBUG    | scheduler.engine:_discover_tasks:115 | 任务模块不存在: tasks.guild
+2026-06-17 21:44:22.347 | DEBUG    | scheduler.engine:_discover_tasks:115 | 任务模块不存在: tasks.enhance
+2026-06-17 21:44:22.347 | DEBUG    | scheduler.engine:_discover_tasks:115 | 任务模块不存在: tasks.summon
+2026-06-17 21:44:22.347 | INFO     | scheduler.engine:_discover_tasks:121 | 共发现 2 个任务: ['daily_signin', 'collect_stamina']
+2026-06-17 21:44:22.347 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 21:44:22.367 | INFO     | __main__:build_runtime:159 | 设备分辨率: (720, 1280)
+2026-06-17 21:44:22.368 | INFO     | __main__:build_runtime:160 | 图像模板目录: ./assets
+2026-06-17 21:44:22.368 | INFO     | __main__:build_runtime:161 | 已注册 2 个任务
+2026-06-17 21:44:22.368 | DEBUG    | core.adb_controller:shell:155 | shell: echo alive
+2026-06-17 21:44:22.384 | DEBUG    | core.adb_controller:exec_out:211 | exec-out: screencap
+2026-06-17 21:44:22.532 | DEBUG    | core.device:screenshot:55 | Raw 截图失败，回退到 PNG 模式: 像素数据不足: 期望 3686400 字节, 实际 3686370 字节
+2026-06-17 21:44:22.532 | DEBUG    | core.adb_controller:shell_bytes:183 | shell (bytes): screencap -p
+2026-06-17 21:44:22.896 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 21:44:22.896 | INFO     | __main__:main:248 | 脚本已退出
+2026-06-17 23:24:01.789 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 23:24:01.789 | INFO     | __main__:main:203 | ==================================================
+2026-06-17 23:24:01.789 | INFO     | __main__:main:204 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 23:24:01.789 | INFO     | __main__:main:205 | ==================================================
+2026-06-17 23:24:01.829 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 23:24:02.013 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 23:24:02.013 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 23:24:02.043 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 23:24:02.115 | DEBUG    | core.ocr:__init__:42 | OCREngine 已创建 (语言=['ch_sim', 'en'], GPU=True)
+2026-06-17 23:24:02.115 | DEBUG    | scheduler.recovery:_load_popup_templates:82 | 已加载 0 个弹窗模板: []
+2026-06-17 23:24:02.116 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_signin (DailySignInTask)
+2026-06-17 23:24:02.117 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: collect_mail (CollectMailTask)
+2026-06-17 23:24:02.118 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: friends (FriendsTask)
+2026-06-17 23:24:02.120 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: events (EventsTask)
+2026-06-17 23:24:02.121 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_quest (DailyQuestTask)
+2026-06-17 23:24:02.122 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: guild (GuildTask)
+2026-06-17 23:24:02.123 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: arena (ArenaTask)
+2026-06-17 23:24:02.124 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: auto_battle (AutoBattleTask)
+2026-06-17 23:24:02.124 | INFO     | scheduler.engine:_discover_tasks:121 | 共发现 8 个任务: ['daily_signin', 'collect_mail', 'friends', 'events', 'daily_quest', 'guild', 'arena', 'auto_battle']
+2026-06-17 23:24:02.124 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 23:24:02.146 | INFO     | __main__:build_runtime:159 | 设备分辨率: (720, 1280)
+2026-06-17 23:24:02.146 | INFO     | __main__:build_runtime:160 | 图像模板目录: ./assets
+2026-06-17 23:24:02.146 | INFO     | __main__:build_runtime:161 | 已注册 8 个任务
+2026-06-17 23:24:02.146 | DEBUG    | core.adb_controller:shell:155 | shell: echo alive
+2026-06-17 23:24:02.163 | DEBUG    | core.adb_controller:exec_out:211 | exec-out: screencap
+2026-06-17 23:24:02.355 | DEBUG    | core.device:screenshot:55 | Raw 截图失败，回退到 PNG 模式: 像素数据不足: 期望 3686400 字节, 实际 3686386 字节
+2026-06-17 23:24:02.355 | DEBUG    | core.adb_controller:shell_bytes:183 | shell (bytes): screencap -p
+2026-06-17 23:24:02.722 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 23:24:02.722 | INFO     | __main__:main:248 | 脚本已退出
+2026-06-17 23:26:38.794 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 23:26:38.795 | INFO     | __main__:main:203 | ==================================================
+2026-06-17 23:26:38.795 | INFO     | __main__:main:204 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 23:26:38.795 | INFO     | __main__:main:205 | ==================================================
+2026-06-17 23:26:38.832 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 23:26:39.008 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 23:26:39.009 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 23:26:39.037 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 23:26:39.098 | DEBUG    | core.ocr:__init__:42 | OCREngine 已创建 (语言=['ch_sim', 'en'], GPU=True)
+2026-06-17 23:26:39.099 | DEBUG    | scheduler.recovery:_load_popup_templates:82 | 已加载 0 个弹窗模板: []
+2026-06-17 23:26:39.099 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_signin (DailySignInTask)
+2026-06-17 23:26:39.100 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: collect_mail (CollectMailTask)
+2026-06-17 23:26:39.100 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: friends (FriendsTask)
+2026-06-17 23:26:39.100 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: events (EventsTask)
+2026-06-17 23:26:39.100 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_quest (DailyQuestTask)
+2026-06-17 23:26:39.101 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: guild (GuildTask)
+2026-06-17 23:26:39.101 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: arena (ArenaTask)
+2026-06-17 23:26:39.101 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: auto_battle (AutoBattleTask)
+2026-06-17 23:26:39.101 | INFO     | scheduler.engine:_discover_tasks:121 | 共发现 8 个任务: ['daily_signin', 'collect_mail', 'friends', 'events', 'daily_quest', 'guild', 'arena', 'auto_battle']
+2026-06-17 23:26:39.101 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 23:26:39.124 | INFO     | __main__:build_runtime:159 | 设备分辨率: (720, 1280)
+2026-06-17 23:26:39.124 | INFO     | __main__:build_runtime:160 | 图像模板目录: ./assets
+2026-06-17 23:26:39.125 | INFO     | __main__:build_runtime:161 | 已注册 8 个任务
+2026-06-17 23:26:39.125 | DEBUG    | core.adb_controller:shell:155 | shell: echo alive
+2026-06-17 23:26:39.141 | DEBUG    | core.adb_controller:exec_out:211 | exec-out: screencap
+2026-06-17 23:26:39.288 | DEBUG    | core.device:screenshot:55 | Raw 截图失败，回退到 PNG 模式: 像素数据不足: 期望 3686400 字节, 实际 3681057 字节
+2026-06-17 23:26:39.289 | DEBUG    | core.adb_controller:shell_bytes:183 | shell (bytes): screencap -p
+2026-06-17 23:26:39.641 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 23:26:39.641 | INFO     | __main__:main:248 | 脚本已退出
+2026-06-17 23:27:53.420 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 23:27:53.420 | INFO     | __main__:main:203 | ==================================================
+2026-06-17 23:27:53.421 | INFO     | __main__:main:204 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 23:27:53.421 | INFO     | __main__:main:205 | ==================================================
+2026-06-17 23:27:53.459 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 23:27:53.640 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 23:27:53.640 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 23:27:53.668 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 23:27:53.726 | DEBUG    | core.ocr:__init__:42 | OCREngine 已创建 (语言=['ch_sim', 'en'], GPU=True)
+2026-06-17 23:27:53.727 | DEBUG    | scheduler.recovery:_load_popup_templates:82 | 已加载 0 个弹窗模板: []
+2026-06-17 23:27:53.728 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_signin (DailySignInTask)
+2026-06-17 23:27:53.728 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: collect_mail (CollectMailTask)
+2026-06-17 23:27:53.728 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: friends (FriendsTask)
+2026-06-17 23:27:53.728 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: events (EventsTask)
+2026-06-17 23:27:53.728 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_quest (DailyQuestTask)
+2026-06-17 23:27:53.729 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: guild (GuildTask)
+2026-06-17 23:27:53.729 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: arena (ArenaTask)
+2026-06-17 23:27:53.729 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: auto_battle (AutoBattleTask)
+2026-06-17 23:27:53.729 | INFO     | scheduler.engine:_discover_tasks:121 | 共发现 8 个任务: ['daily_signin', 'collect_mail', 'friends', 'events', 'daily_quest', 'guild', 'arena', 'auto_battle']
+2026-06-17 23:27:53.729 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 23:27:53.750 | INFO     | __main__:build_runtime:159 | 设备分辨率: (720, 1280)
+2026-06-17 23:27:53.750 | INFO     | __main__:build_runtime:160 | 图像模板目录: ./assets
+2026-06-17 23:27:53.750 | INFO     | __main__:build_runtime:161 | 已注册 8 个任务
+2026-06-17 23:27:53.750 | DEBUG    | core.adb_controller:shell:155 | shell: echo alive
+2026-06-17 23:27:53.766 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:27:55.405 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:27:56.118 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:27:56.816 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:27:57.531 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:27:58.233 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:27:58.636 | INFO     | scheduler.engine:run_once:180 | 准备执行 1 个任务: ['friends']
+2026-06-17 23:27:58.636 | INFO     | scheduler.engine:run_once:198 | --- [friends] 开始 ---
+2026-06-17 23:27:58.637 | INFO     | scheduler.base_task:run:172 | [friends] 开始执行 (优先级=5)
+2026-06-17 23:27:58.637 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:27:58.637 | DEBUG    | core.vision:wait_until:239 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:27:58.637 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:27:59.037 | DEBUG    | core.vision:_load_template:89 | 模板已加载: buttons/btn_social.png (89x89)
+2026-06-17 23:27:59.051 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:27:59.551 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:27:59.968 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:00.469 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:00.881 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:01.381 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:01.797 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:02.297 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:02.715 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:03.216 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:03.623 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:04.123 | WARNING  | core.vision:wait_until:251 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:28:04.124 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:28:04.124 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:28:04.124 | WARNING  | scheduler.base_task:run:214 | [friends] 执行失败，将重试
+2026-06-17 23:28:04.124 | INFO     | scheduler.base_task:run:179 | [friends] 第 1 次重试 (等待 1.0s)
+2026-06-17 23:28:05.124 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:28:05.124 | DEBUG    | core.vision:wait_until:239 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:28:05.124 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:05.531 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:06.032 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:06.442 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:06.942 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:07.354 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:07.855 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:08.276 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:08.776 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:09.211 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:09.711 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:10.119 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:10.620 | WARNING  | core.vision:wait_until:251 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:28:10.620 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:28:10.621 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:28:10.621 | WARNING  | scheduler.base_task:run:214 | [friends] 执行失败，将重试
+2026-06-17 23:28:10.621 | INFO     | scheduler.base_task:run:179 | [friends] 第 2 次重试 (等待 2.0s)
+2026-06-17 23:28:12.621 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:28:12.621 | DEBUG    | core.vision:wait_until:239 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:28:12.621 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:13.037 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:13.538 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:13.970 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:14.470 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:14.898 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:15.398 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:15.814 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:16.314 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:16.737 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:17.237 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:17.653 | DEBUG    | core.vision:find:150 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.85)
+2026-06-17 23:28:18.154 | WARNING  | core.vision:wait_until:251 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:28:18.154 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:28:18.154 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:28:18.154 | ERROR    | scheduler.base_task:run:217 | [friends] 已达最大重试次数，标记失败
+2026-06-17 23:28:18.155 | WARNING  | scheduler.engine:run_once:216 | 任务 [friends] 失败，尝试恢复...
+2026-06-17 23:28:18.155 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:18.861 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:19.580 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:20.291 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:20.995 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:28:21.707 | INFO     | scheduler.engine:run_once:226 | 本轮完成: 0 成功, 1 失败, 0 跳过 (共 1 个任务)
+2026-06-17 23:28:21.707 | INFO     | __main__:main:242 | 任务完成: 0 成功, 1 失败, 0 跳过
+2026-06-17 23:28:21.723 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 23:28:21.723 | INFO     | __main__:main:248 | 脚本已退出
+2026-06-17 23:29:45.903 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 23:29:45.903 | INFO     | __main__:main:203 | ==================================================
+2026-06-17 23:29:45.903 | INFO     | __main__:main:204 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 23:29:45.904 | INFO     | __main__:main:205 | ==================================================
+2026-06-17 23:29:45.940 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 23:29:46.128 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 23:29:46.128 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 23:29:46.156 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 23:29:46.217 | DEBUG    | core.vision:__init__:45 | VisionEngine 阈值=0.75
+2026-06-17 23:29:46.217 | DEBUG    | core.ocr:__init__:42 | OCREngine 已创建 (语言=['ch_sim', 'en'], GPU=True)
+2026-06-17 23:29:46.218 | DEBUG    | scheduler.recovery:_load_popup_templates:82 | 已加载 0 个弹窗模板: []
+2026-06-17 23:29:46.219 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_signin (DailySignInTask)
+2026-06-17 23:29:46.219 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: collect_mail (CollectMailTask)
+2026-06-17 23:29:46.219 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: friends (FriendsTask)
+2026-06-17 23:29:46.219 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: events (EventsTask)
+2026-06-17 23:29:46.220 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_quest (DailyQuestTask)
+2026-06-17 23:29:46.220 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: guild (GuildTask)
+2026-06-17 23:29:46.220 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: arena (ArenaTask)
+2026-06-17 23:29:46.220 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: auto_battle (AutoBattleTask)
+2026-06-17 23:29:46.220 | INFO     | scheduler.engine:_discover_tasks:121 | 共发现 8 个任务: ['daily_signin', 'collect_mail', 'friends', 'events', 'daily_quest', 'guild', 'arena', 'auto_battle']
+2026-06-17 23:29:46.221 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 23:29:46.241 | INFO     | __main__:build_runtime:159 | 设备分辨率: (720, 1280)
+2026-06-17 23:29:46.241 | INFO     | __main__:build_runtime:160 | 图像模板目录: ./assets
+2026-06-17 23:29:46.241 | INFO     | __main__:build_runtime:161 | 已注册 8 个任务
+2026-06-17 23:29:46.241 | DEBUG    | core.adb_controller:shell:155 | shell: echo alive
+2026-06-17 23:29:46.257 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:46.976 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:47.682 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:48.382 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:49.091 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:49.804 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:50.202 | INFO     | scheduler.engine:run_once:180 | 准备执行 1 个任务: ['friends']
+2026-06-17 23:29:50.202 | INFO     | scheduler.engine:run_once:198 | --- [friends] 开始 ---
+2026-06-17 23:29:50.202 | INFO     | scheduler.base_task:run:172 | [friends] 开始执行 (优先级=5)
+2026-06-17 23:29:50.202 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:29:50.202 | DEBUG    | core.vision:wait_until:240 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:29:50.202 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:50.604 | DEBUG    | core.vision:_load_template:90 | 模板已加载: buttons/btn_social.png (89x89)
+2026-06-17 23:29:50.619 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:51.120 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:51.545 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:52.045 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:52.466 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:52.967 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:53.392 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:53.893 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:54.345 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:54.845 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:55.269 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:55.770 | WARNING  | core.vision:wait_until:252 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:29:55.770 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:29:55.770 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:29:55.770 | WARNING  | scheduler.base_task:run:214 | [friends] 执行失败，将重试
+2026-06-17 23:29:55.771 | INFO     | scheduler.base_task:run:179 | [friends] 第 1 次重试 (等待 1.0s)
+2026-06-17 23:29:56.771 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:29:56.771 | DEBUG    | core.vision:wait_until:240 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:29:56.771 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:57.185 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:57.686 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:58.122 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:58.622 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:59.043 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:29:59.544 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:29:59.967 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:00.468 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:00.886 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:01.387 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:01.806 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:02.307 | WARNING  | core.vision:wait_until:252 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:30:02.307 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:30:02.307 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:30:02.307 | WARNING  | scheduler.base_task:run:214 | [friends] 执行失败，将重试
+2026-06-17 23:30:02.307 | INFO     | scheduler.base_task:run:179 | [friends] 第 2 次重试 (等待 2.0s)
+2026-06-17 23:30:04.308 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:30:04.308 | DEBUG    | core.vision:wait_until:240 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:30:04.308 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:04.734 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:05.234 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:05.665 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:06.166 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:06.584 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:07.084 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:07.501 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:08.001 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:08.424 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:08.924 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:09.340 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:09.841 | WARNING  | core.vision:wait_until:252 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:30:09.841 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:30:09.841 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:30:09.841 | ERROR    | scheduler.base_task:run:217 | [friends] 已达最大重试次数，标记失败
+2026-06-17 23:30:09.842 | WARNING  | scheduler.engine:run_once:216 | 任务 [friends] 失败，尝试恢复...
+2026-06-17 23:30:09.842 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:10.551 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:11.268 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:11.978 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:12.692 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:13.409 | INFO     | scheduler.engine:run_once:226 | 本轮完成: 0 成功, 1 失败, 0 跳过 (共 1 个任务)
+2026-06-17 23:30:13.410 | INFO     | __main__:main:228 | 任务完成: 0 成功, 1 失败, 0 跳过
+2026-06-17 23:30:13.426 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 23:30:13.427 | INFO     | __main__:main:248 | 脚本已退出
+2026-06-17 23:30:34.937 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 23:30:34.938 | INFO     | __main__:main:203 | ==================================================
+2026-06-17 23:30:34.938 | INFO     | __main__:main:204 | 卡牌游戏日常任务自动化脚本 启动
+2026-06-17 23:30:34.938 | INFO     | __main__:main:205 | ==================================================
+2026-06-17 23:30:34.974 | INFO     | __main__:init_adb:44 | 自动检测 ADB 路径: D:\Application\Cjyx\platform-tools\adb.exe
+2026-06-17 23:30:35.151 | INFO     | __main__:init_adb:52 | 自动检测 MuMu 设备: 127.0.0.1:16384
+2026-06-17 23:30:35.151 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 23:30:35.180 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 23:30:35.242 | DEBUG    | core.vision:__init__:45 | VisionEngine 阈值=0.75
+2026-06-17 23:30:35.242 | DEBUG    | core.ocr:__init__:42 | OCREngine 已创建 (语言=['ch_sim', 'en'], GPU=True)
+2026-06-17 23:30:35.243 | DEBUG    | scheduler.recovery:_load_popup_templates:82 | 已加载 0 个弹窗模板: []
+2026-06-17 23:30:35.243 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_signin (DailySignInTask)
+2026-06-17 23:30:35.243 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: collect_mail (CollectMailTask)
+2026-06-17 23:30:35.244 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: friends (FriendsTask)
+2026-06-17 23:30:35.244 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: events (EventsTask)
+2026-06-17 23:30:35.244 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: daily_quest (DailyQuestTask)
+2026-06-17 23:30:35.244 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: guild (GuildTask)
+2026-06-17 23:30:35.245 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: arena (ArenaTask)
+2026-06-17 23:30:35.245 | DEBUG    | scheduler.engine:_discover_tasks:111 | 已注册任务: auto_battle (AutoBattleTask)
+2026-06-17 23:30:35.245 | INFO     | scheduler.engine:_discover_tasks:121 | 共发现 8 个任务: ['daily_signin', 'collect_mail', 'friends', 'events', 'daily_quest', 'guild', 'arena', 'auto_battle']
+2026-06-17 23:30:35.245 | DEBUG    | core.adb_controller:shell:155 | shell: wm size
+2026-06-17 23:30:35.265 | INFO     | __main__:build_runtime:159 | 设备分辨率: (720, 1280)
+2026-06-17 23:30:35.265 | INFO     | __main__:build_runtime:160 | 图像模板目录: ./assets
+2026-06-17 23:30:35.265 | INFO     | __main__:build_runtime:161 | 已注册 8 个任务
+2026-06-17 23:30:35.266 | DEBUG    | core.adb_controller:shell:155 | shell: echo alive
+2026-06-17 23:30:35.283 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:36.012 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:36.727 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:37.438 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:38.152 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:38.877 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:39.287 | INFO     | scheduler.engine:run_once:180 | 准备执行 1 个任务: ['friends']
+2026-06-17 23:30:39.287 | INFO     | scheduler.engine:run_once:198 | --- [friends] 开始 ---
+2026-06-17 23:30:39.287 | INFO     | scheduler.base_task:run:172 | [friends] 开始执行 (优先级=5)
+2026-06-17 23:30:39.287 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:30:39.287 | DEBUG    | core.vision:wait_until:240 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:30:39.287 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:39.702 | DEBUG    | core.vision:_load_template:90 | 模板已加载: buttons/btn_social.png (89x89)
+2026-06-17 23:30:39.715 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:40.216 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:40.648 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:41.148 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:41.569 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:42.070 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:42.499 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:43.000 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:43.429 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:43.930 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:44.351 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:44.852 | WARNING  | core.vision:wait_until:252 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:30:44.852 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:30:44.852 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:30:44.853 | WARNING  | scheduler.base_task:run:214 | [friends] 执行失败，将重试
+2026-06-17 23:30:44.853 | INFO     | scheduler.base_task:run:179 | [friends] 第 1 次重试 (等待 1.0s)
+2026-06-17 23:30:45.853 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:30:45.853 | DEBUG    | core.vision:wait_until:240 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:30:45.853 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:46.266 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:46.767 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:47.191 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:47.692 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:48.110 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:48.611 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:49.025 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:49.526 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:49.945 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:50.446 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:50.870 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:51.371 | WARNING  | core.vision:wait_until:252 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:30:51.371 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:30:51.371 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:30:51.372 | WARNING  | scheduler.base_task:run:214 | [friends] 执行失败，将重试
+2026-06-17 23:30:51.372 | INFO     | scheduler.base_task:run:179 | [friends] 第 2 次重试 (等待 2.0s)
+2026-06-17 23:30:53.372 | DEBUG    | core.action:click_when_appears:54 | 等待并点击: buttons/btn_social.png
+2026-06-17 23:30:53.372 | DEBUG    | core.vision:wait_until:240 | 等待元素出现: buttons/btn_social.png (timeout=5.0s)
+2026-06-17 23:30:53.372 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:53.790 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:54.290 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:54.721 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:55.222 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:55.639 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:56.140 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:56.570 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:57.070 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:57.490 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:57.990 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:58.410 | WARNING  | core.vision:find:151 | 模板未匹配: buttons/btn_social.png (最高置信度=0.553, 阈值=0.75)
+2026-06-17 23:30:58.910 | WARNING  | core.vision:wait_until:252 | 等待元素超时: buttons/btn_social.png (5.0s)
+2026-06-17 23:30:58.911 | DEBUG    | core.action:click_when_appears:60 | 未找到元素: buttons/btn_social.png
+2026-06-17 23:30:58.911 | WARNING  | tasks.friends:execute:22 | 找不到'社交'入口
+2026-06-17 23:30:58.911 | ERROR    | scheduler.base_task:run:217 | [friends] 已达最大重试次数，标记失败
+2026-06-17 23:30:58.911 | WARNING  | scheduler.engine:run_once:216 | 任务 [friends] 失败，尝试恢复...
+2026-06-17 23:30:58.911 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:30:59.625 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:31:00.353 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:31:01.060 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:31:01.781 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:31:02.497 | INFO     | scheduler.engine:run_once:226 | 本轮完成: 0 成功, 1 失败, 0 跳过 (共 1 个任务)
+2026-06-17 23:31:02.498 | INFO     | __main__:main:228 | 任务完成: 0 成功, 1 失败, 0 跳过
+2026-06-17 23:31:02.514 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384
+2026-06-17 23:31:02.514 | INFO     | __main__:main:248 | 脚本已退出
+2026-06-17 23:32:50.101 | INFO     | utils.logger:setup_logger:72 | 日志系统已初始化，级别=INFO，目录=./logs
+2026-06-17 23:32:50.318 | INFO     | core.adb_controller:connect:70 | 正在连接 ADB 设备: 127.0.0.1:16384
+2026-06-17 23:32:50.350 | INFO     | core.adb_controller:connect:84 | ADB 设备已连接: 127.0.0.1:16384
+2026-06-17 23:32:50.353 | DEBUG    | core.adb_controller:shell:155 | shell: screencap -p /sdcard/_bot_screen.png
+2026-06-17 23:32:50.924 | INFO     | core.adb_controller:disconnect:113 | ADB 设备已断开: 127.0.0.1:16384

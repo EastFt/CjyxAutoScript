@@ -1,0 +1,90 @@
+adb:
+  device_addr: auto
+  adb_path: auto
+  screenshot_method: raw
+  connect_timeout: 10.0
+tasks:
+- name: daily_signin
+  enabled: false
+  priority: 1
+  retry_count: 2
+  retry_delay: 1.0
+  timeout: 30.0
+- name: collect_mail
+  enabled: false
+  priority: 3
+  retry_count: 2
+  retry_delay: 1.0
+  timeout: 20.0
+- name: friends
+  enabled: false
+  priority: 5
+  retry_count: 2
+  retry_delay: 1.0
+  timeout: 20.0
+- name: events
+  enabled: false
+  priority: 8
+  retry_count: 1
+  retry_delay: 2.0
+  timeout: 600.0
+  params:
+    phases:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+- name: guild
+  enabled: false
+  priority: 15
+  retry_count: 2
+  retry_delay: 2.0
+  timeout: 90.0
+- name: arena
+  enabled: false
+  priority: 20
+  retry_count: 2
+  retry_delay: 3.0
+  timeout: 120.0
+  params:
+    battle_count: 2
+- name: auto_battle
+  enabled: false
+  priority: 25
+  retry_count: 2
+  retry_delay: 2.0
+  timeout: 900.0
+  params:
+    elite_count: 3
+    hero_count: 10
+    adventure_wait: 600
+- name: daily_quest
+  enabled: true
+  priority: 27
+  retry_count: 3
+  retry_delay: 2.0
+  timeout: 120.0
+  params: {}
+- name: divine_arena
+  enabled: false
+  priority: 30
+  retry_count: 3
+  retry_delay: 2.0
+  timeout: 120.0
+  params:
+    pirmin_rounds: 10
+    wulun_rounds: 10
+    hatomo_rounds: 10
+global_retry: 3
+screenshot_interval: 0.5
+loop_interval: 60.0
+log_level: INFO
+log_dir: ./logs
+assets_dir: ./assets
+game_package: ''
+game_activity: ''
+max_restart_count: 3
+stuck_detection_frames: 5
