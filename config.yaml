@@ -1,0 +1,100 @@
+adb:
+  device_addr: auto
+  adb_path: auto
+  screenshot_method: raw
+  connect_timeout: 10.0
+tasks:
+- name: daily_signin
+  enabled: false
+  priority: 1
+  retry_count: 3
+  retry_delay: 2.0
+  timeout: 30.0
+- name: daily_quest
+  enabled: true
+  priority: 15
+  retry_count: 2
+  retry_delay: 1.0
+  timeout: 60.0
+- name: collect_mail
+  enabled: true
+  priority: 3
+  retry_count: 2
+  retry_delay: 1.0
+  timeout: 20.0
+- name: friends
+  enabled: true
+  priority: 5
+  retry_count: 2
+  retry_delay: 1.0
+  timeout: 20.0
+- name: events
+  enabled: true
+  priority: 11
+  retry_count: 1
+  retry_delay: 2.0
+  timeout: 600.0
+  params:
+    phases:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+- name: treasure_hunt
+  enabled: false
+  priority: 12
+  retry_count: 2
+  retry_delay: 2.0
+  timeout: 900.0
+  params:
+    buy_count: 50
+- name: guild
+  enabled: true
+  priority: 7
+  retry_count: 2
+  retry_delay: 2.0
+  timeout: 90.0
+- name: arena
+  enabled: true
+  priority: 9
+  retry_count: 2
+  retry_delay: 3.0
+  timeout: 120.0
+  params:
+    battle_count: 2
+- name: auto_battle
+  enabled: true
+  priority: 13
+  retry_count: 2
+  retry_delay: 2.0
+  timeout: 900.0
+  params:
+    elite_count: 3
+    hero_count: 10
+    adventure_wait: 600
+- name: divine_arena
+  enabled: true
+  priority: 17
+  retry_count: 1
+  retry_delay: 2.0
+  timeout: 1800.0
+  params:
+    pirmin_enabled: true
+    pirmin_rounds: 10
+    wulun_enabled: true
+    wulun_rounds: 10
+    hatomo_enabled: true
+    hatomo_rounds: 10
+global_retry: 3
+screenshot_interval: 0.5
+loop_interval: 60.0
+log_level: INFO
+log_dir: ./logs
+assets_dir: ./assets
+game_package: ''
+game_activity: ''
+max_restart_count: 3
+stuck_detection_frames: 5
